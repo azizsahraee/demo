@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #1e3c72;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  padding-bottom: 20px; /* Add some padding at the bottom */
+}
+
+.card {
+  flex: 0 0 auto; /* Prevent flex items from shrinking or growing */
+  width: 30%; /* Adjust the width as needed */
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Service Logos - Ensure Same Size */
+.service-logo {
+  width: 100px; /* Fixed size for all logos */
+  height: 100px; /* Fixed size for all logos */
+  margin-bottom: 15px;
+}
+
+/* Portfolio Section - Horizontal Scrolling */
+.portfolio {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  gap: 20px; /* Space between images */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap scrolling to each item */
+  padding-bottom: 20px; /* Add some padding at the bottom */
+  scrollbar-width: thin; /* For better scrollbar appearance */
+  scrollbar-color: #1e3c72 #f4f4f4; /* Custom scrollbar colors */
+}
+
+.project {
+  flex: 0 0 calc(50% - 10px); /* Show 2 photos at a time */
+  scroll-snap-align: start; /* Snap each project to the start */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; /* Ensure images fill the container */
+}
+
+.project p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Custom Scrollbar Styling (Optional) */
+.portfolio-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.portfolio-grid::-webkit-scrollbar-thumb {
+  background: #1e3c72;
+  border-radius: 10px;
+}
+
+.portfolio-grid::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #1e3c72;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
